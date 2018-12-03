@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    background: #0f0c29; 
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);      
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);     
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+	color: #FFF;
+	text-align: center;
+}
+
+.container {
+	max-width:450px;
+	margin: 0 auto;
+}
+
+.tabs {
+	padding-bottom: 1rem;
+}
+
+.tab {
+	border: 1px solid transparent;
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px 16px;
+    color: #FFF;
+    background:#43406e;
+    transition: all 0.7s;
+}
+
+.tab.active {
+	color: #FFF;
+	background: #3F3A67;
+    border: 1px solid #B3B1C4;
+    position: relative;
+}
+ a.tab.active:after {
+    content: '';
+    border-bottom: 15px solid #fefefe;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transition: all 0.7s;
+    transform: translateX(-50%);
+} 
+.content {
+	background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+	display: none;
+	padding: 1.5rem;
+    color: #4a5666;
+    min-height: 220px;
+}
+.content h1{
+    color:gray;
+}
+.show {
+	display: block;
+ 
+}
+.show .fadein{
+       animation: fadein 0.7s ease;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+span.rope:before {
+    content: '';
+    height: 5px;
+    width: 5px;
+    background: #FFF;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+
+span.rope {
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    background: #FFF;
+    vertical-align: middle;
+    margin: 0 -4px;
+    position: relative;
+}
